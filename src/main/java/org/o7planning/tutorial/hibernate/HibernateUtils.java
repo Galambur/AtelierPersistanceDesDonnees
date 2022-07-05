@@ -36,3 +36,4 @@ public class HibernateUtils {
         // Close caches and connection pools
         getSessionFactory().close();
     }
+}

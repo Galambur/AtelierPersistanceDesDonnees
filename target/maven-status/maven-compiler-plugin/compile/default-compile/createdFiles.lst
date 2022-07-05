@@ -1,0 +1,7 @@
+org\o7planning\tutorial\hibernate\entities\Timekeeper.class
+org\o7planning\tutorial\hibernate\entities\SalaryGrade.class
+org\o7planning\tutorial\hibernate\query\QueryObjectDemo.class
+org\o7planning\tutorial\hibernate\entities\Employee.class
+org\o7planning\tutorial\hibernate\HibernateUtils.class
+org\o7planning\tutorial\hibernate\App.class
+org\o7planning\tutorial\hibernate\entities\Department.class
