@@ -10,42 +10,46 @@ import org.o7planning.tutorial.hibernate.entities.Employee;
 
 public class QueryObjectDemo {
 
-    public static void main(String[] args) {
-        SessionFactory factory = HibernateUtils.getSessionFactory();
+   public static void main(String[] args) {
+       SessionFactory factory = HibernateUtils.getSessionFactory();
 
-        Session session = factory.getCurrentSession();
+       Session session = factory.getCurrentSession();
 
-        try {
+       try {
+           
+           // All the action with DB via Hibernate
+           // must be located in one transaction.
+           // Start Transaction.            
+           session.getTransaction().begin();
 
-            // All the action with DB via Hibernate
-            // must be located in one transaction.
-            // Start Transaction.            
-            session.getTransaction().begin();
+   
+           
+           // Create an HQL statement, query the object.
+           // Equivalent to the SQL statement:
+           // Select e.* from EMPLOYEE e order by e.EMP_NAME, e.EMP_NO
+           String sql = "Select e from " + Employee.class.getName() + " e "
+                   + " order by e.empName, e.empNo ";
 
-            // Create an HQL statement, query the object.
-            // Equivalent to the SQL statement:
-            // Select e.* from EMPLOYEE e order by e.EMP_NAME, e.EMP_NO
-            String sql = "Select e from " + Employee.class.getName() + " e "
-                    + " order by e.empName, e.empNo ";
+  
+           // Create Query object.
+           Query<Employee> query = session.createQuery(sql);
 
-            // Create Query object.
-            Query<Employee> query = session.createQuery(sql);
+   
+           // Execute query.
+           List<Employee> employees = query.getResultList();
 
-            // Execute query.
-            List<Employee> employees = query.getResultList();
-
-            for (Employee emp : employees) {
-                System.out.println("Emp: " + emp.getEmpNo() + " : "
-                        + emp.getEmpName());
-            }
-
-            // Commit data.
-            session.getTransaction().commit();
-        } catch (Exception e) {
-            e.printStackTrace();
-            // Rollback in case of an error occurred.
-            session.getTransaction().rollback();
-        }
-    }
-
+           for (Employee emp : employees) {
+               System.out.println("Emp: " + emp.getEmpNo() + " : "
+                       + emp.getEmpName());
+           }
+ 
+           // Commit data.
+           session.getTransaction().commit();
+       } catch (Exception e) {
+           e.printStackTrace();
+           // Rollback in case of an error occurred.
+           session.getTransaction().rollback();
+       }
+   }
+   
 }

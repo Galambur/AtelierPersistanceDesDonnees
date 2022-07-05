@@ -3,5 +3,14 @@ D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o
 D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\App.java
 D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\entities\Employee.java
 D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\HibernateUtils.java
+D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\DataUtils.java
+D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\demo\PersistDemo.java
+D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\demo\PersistTransientDemo.java
 D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\entities\SalaryGrade.java
+D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\demo\PersistentDemo.java
+D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\query\QueryObjectDemo2.java
+D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\bean\ShortEmpInfo.java
+D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\query\ShortEmpInfoQueryDemo.java
+D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\query\UniqueResultDemo.java
 D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\entities\Timekeeper.java
+D:\Documents\EPSI\B3\Semestre2\Persistance\HibernateTutorial\src\main\java\org\o7planning\tutorial\hibernate\query\QuerySomeColumnDemo.java
